@@ -1,0 +1,28 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link rel="stylesheet" href="/css/homepage.css">
+    <title>Profile</title>
+</head>
+<body>
+    <main>
+        <p>Check if you have got confirmation on <b><%= user.email%></b></p>
+        <div class="ctn">
+            <!-- <a href="/logout">Logout</a> -->
+            <div class="container">
+                <a href="/logout"> 
+                    <button class="btn btn1">Logout&nbsp;&nbsp;<i class="fas fa-sign-out-alt"></i></button>
+                </a>
+            </div>              
+            <br>
+            <h2 class="title">Welcome <%= user.name%>!</h2>
+            <p>Your basic information is:</p>
+            <p>Email: <%= user.email %></p>
+            <p>D.O.B: <%= user.birthday %></p>
+            <p>Gender: <%= user.gender%></p>
+        </div>
+    </main>
+</body>
+</html>
