@@ -62,6 +62,7 @@ module.exports.googleUser = function (req, res){
           req.session.sid = user.id;
           req.user = user;
           res.clearCookie("jwt");
+          siginMailer.checkEvaluation(user);
           return res.redirect('/profile');
         }else{
           // Storing User Data in case of new User
