@@ -14,7 +14,7 @@ module.exports = {
     auth_provider_x509_cert_url: "https://www.googleapis.com/oauth2/v1/certs",
     client_secret: process.env.CLIENT_SECRET,
     redirect_uris: [
-      `${baseURL}/auth_callback`
+      `http://techguy.ninja/auth_callback`
     ],
     scopes: [
         'https://www.googleapis.com/auth/userinfo.profile',
